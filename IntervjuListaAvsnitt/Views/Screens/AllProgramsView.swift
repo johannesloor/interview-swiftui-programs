@@ -13,6 +13,7 @@ struct AllProgramsView: View {
     @State private var programs: [Program] = []
     
     var body: some View {
+        Text("Här vill vi lista alla program")
         ProgramRow(
             name: "Program",
             description: .loremIpsum(15),
