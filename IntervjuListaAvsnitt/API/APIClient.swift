@@ -13,10 +13,7 @@ struct APIClient {
     private static let urlSession: URLSession = .shared
     
     /*
-        URLAR:
         Alla program: "https://api.sr.se/api/v2/programs?format=json&pagination=false"
-        Ett program: "http://api.sr.se/api/v2/programs/(programId)?format=json"
-     
         Implementera valfri method.
      */
     
