@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct AllProgramsView: View {
+struct AllProgramsScreen: View {
     
     @State private var programs: [Program] = []
     
@@ -28,5 +28,5 @@ struct AllProgramsView: View {
 }
 
 #Preview {
-    AllProgramsView()
+    AllProgramsScreen()
 }

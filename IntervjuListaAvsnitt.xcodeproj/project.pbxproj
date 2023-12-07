@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A3DB0F82B20A22600F20C89 /* IntervjuListaAvsnittApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DB0F72B20A22600F20C89 /* IntervjuListaAvsnittApp.swift */; };
-		6A3DB0FA2B20A22600F20C89 /* AllProgramsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DB0F92B20A22600F20C89 /* AllProgramsView.swift */; };
+		6A3DB0FA2B20A22600F20C89 /* AllProgramsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DB0F92B20A22600F20C89 /* AllProgramsScreen.swift */; };
 		6A3DB0FC2B20A22700F20C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3DB0FB2B20A22700F20C89 /* Assets.xcassets */; };
 		6A3DB0FF2B20A22700F20C89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3DB0FE2B20A22700F20C89 /* Preview Assets.xcassets */; };
 		6A3DB1072B20A30100F20C89 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DB1062B20A30100F20C89 /* Program.swift */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		6A3DB0F42B20A22600F20C89 /* IntervjuListaAvsnitt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervjuListaAvsnitt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3DB0F72B20A22600F20C89 /* IntervjuListaAvsnittApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervjuListaAvsnittApp.swift; sourceTree = "<group>"; };
-		6A3DB0F92B20A22600F20C89 /* AllProgramsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProgramsView.swift; sourceTree = "<group>"; };
+		6A3DB0F92B20A22600F20C89 /* AllProgramsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProgramsScreen.swift; sourceTree = "<group>"; };
 		6A3DB0FB2B20A22700F20C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A3DB0FE2B20A22700F20C89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A3DB1062B20A30100F20C89 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 		6A3DB0F62B20A22600F20C89 /* IntervjuListaAvsnitt */ = {
 			isa = PBXGroup;
 			children = (
-				6A3DB10F2B20A48F00F20C89 /* Utils */,
 				6A3DB10A2B20A3D100F20C89 /* Views */,
 				6A3DB1052B20A2D000F20C89 /* API */,
+				6A3DB10F2B20A48F00F20C89 /* Utils */,
 				6A3DB0F72B20A22600F20C89 /* IntervjuListaAvsnittApp.swift */,
 				6A3DB0FB2B20A22700F20C89 /* Assets.xcassets */,
 				6A3DB0FD2B20A22700F20C89 /* Preview Content */,
@@ -102,7 +102,7 @@
 		6A3DB10B2B20A3D800F20C89 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				6A3DB0F92B20A22600F20C89 /* AllProgramsView.swift */,
+				6A3DB0F92B20A22600F20C89 /* AllProgramsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A3DB0FA2B20A22600F20C89 /* AllProgramsView.swift in Sources */,
+				6A3DB0FA2B20A22600F20C89 /* AllProgramsScreen.swift in Sources */,
 				6A3DB0F82B20A22600F20C89 /* IntervjuListaAvsnittApp.swift in Sources */,
 				6A3DB1132B20AD2900F20C89 /* RemoteImage.swift in Sources */,
 				6A3DB1152B20B5FA00F20C89 /* ProgramsResponse.swift in Sources */,
