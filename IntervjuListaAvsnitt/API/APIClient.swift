@@ -32,11 +32,3 @@ struct APIClient {
     }
 
 }
-
-extension Publisher {
-    func mapToResult() -> AnyPublisher<Result<Output, Failure>, Never> {
-        map(Result.success)
-            .catch { Just(.failure($0)) }
-            .eraseToAnyPublisher()
-    }
-}
