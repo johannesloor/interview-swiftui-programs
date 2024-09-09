@@ -10,21 +10,41 @@ import Combine
 
 struct AllProgramsScreen: View {
     
-    @State private var programs: [Program] = []
+    @State private var viewModel = Self.ViewModel()
     
     var body: some View {
-        Text("Här vill vi lista alla program")
-        ProgramRow(
-            name: "Program",
-            description: .loremIpsum(15),
-            imageURL: nil
-        )
+        ScrollView {
+            ForEach(viewModel.programs) { program in
+                NavigationLink {
+                    detailView(program: program)
+                } label: {
+                    ProgramRow(
+                        name: program.name,
+                        description: program.description,
+                        imageURL: program.programimage
+                    )
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(8)
+                }
+                .buttonStyle(PlainButtonStyle())
+            }
+        }
+        .navigationTitle("Alla SRs program")
+        .task {
+            await viewModel.load()
+        }
     }
     
-    private func load() {
-        
+    @ViewBuilder
+    private func detailView(program: Program) -> some View {
+        VStack {
+            RemoteImage(imageURL: program.programimage)
+                .frame(height: 300)
+            Text(program.description ?? "")
+            Spacer()
+        }
+        .navigationTitle(program.name)
     }
-    
 }
 
 #Preview {

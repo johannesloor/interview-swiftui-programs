@@ -11,7 +11,9 @@ import SwiftUI
 struct IntervjuListaAvsnittApp: App {
     var body: some Scene {
         WindowGroup {
-            AllProgramsScreen()
+            NavigationStack {
+                AllProgramsScreen()
+            }
         }
     }
 }

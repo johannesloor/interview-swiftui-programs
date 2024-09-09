@@ -13,21 +13,18 @@ struct ProgramRow: View {
     let imageURL: URL?
     
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Spacer()
-                RemoteImage(imageURL: imageURL)
-                    .frame(width: 100, height: 100)
-                Spacer()
+        HStack(alignment: .top) {
+            RemoteImage(imageURL: imageURL)
+                .frame(width: 100, height: 100)
+            VStack(alignment: .leading, spacing: 8) {
+                Text(name)
+                    .font(.headline)
+                Text(description ?? "")
+                    .font(.body)
+                    .lineLimit(3)
             }
-            Text(name)
-                .font(.headline)
-            Text(description ?? "")
-                .font(.body)
+            .padding(.horizontal, 8)
         }
-        
-        
     }
 }
 
