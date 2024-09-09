@@ -18,6 +18,7 @@
 		6A3DB1132B20AD2900F20C89 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DB1122B20AD2900F20C89 /* RemoteImage.swift */; };
 		6A3DB1152B20B5FA00F20C89 /* ProgramsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3DB1142B20B5FA00F20C89 /* ProgramsResponse.swift */; };
 		6A58D2D42B21B1A600839573 /* Ny design.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A58D2D32B21B1A600839573 /* Ny design.png */; };
+		EE9B4B022C8B40DF00A2F677 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EE9B4B012C8B40DF00A2F677 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		6A3DB1122B20AD2900F20C89 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		6A3DB1142B20B5FA00F20C89 /* ProgramsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsResponse.swift; sourceTree = "<group>"; };
 		6A58D2D32B21B1A600839573 /* Ny design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ny design.png"; sourceTree = "<group>"; };
+		EE9B4B012C8B40DF00A2F677 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				6A3DB10F2B20A48F00F20C89 /* Utils */,
 				6A3DB0F72B20A22600F20C89 /* IntervjuListaAvsnittApp.swift */,
 				6A3DB0FB2B20A22700F20C89 /* Assets.xcassets */,
+				EE9B4B012C8B40DF00A2F677 /* README.md */,
 				6A58D2D32B21B1A600839573 /* Ny design.png */,
 				6A3DB0FD2B20A22700F20C89 /* Preview Content */,
 			);
@@ -196,6 +199,7 @@
 			files = (
 				6A58D2D42B21B1A600839573 /* Ny design.png in Resources */,
 				6A3DB0FF2B20A22700F20C89 /* Preview Assets.xcassets in Resources */,
+				EE9B4B022C8B40DF00A2F677 /* README.md in Resources */,
 				6A3DB0FC2B20A22700F20C89 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
