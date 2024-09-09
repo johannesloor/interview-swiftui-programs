@@ -14,17 +14,20 @@ struct ProgramRow: View {
     
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 8) {
+        HStack(spacing: 8) {
             HStack {
-                Spacer()
+                
                 RemoteImage(imageURL: imageURL)
                     .frame(width: 100, height: 100)
-                Spacer()
-            }
-            Text(name)
-                .font(.headline)
-            Text(description ?? "")
-                .font(.body)
+                
+            }.padding(.leading, 8)
+            Spacer()
+            VStack(alignment: .leading) {
+                Text(name)
+                    .font(.headline)
+                Text(description ?? "")
+                    .font(.body)
+            }.padding(.trailing, 8)
         }
         
         
